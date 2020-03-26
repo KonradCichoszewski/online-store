@@ -24,4 +24,4 @@ function NavBar(/*props*/) {
 //     }
 // }
 
-export default connect(/*null, mapDispatchToProps*/)(NavBar)
+export default NavBar;
