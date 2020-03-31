@@ -3,8 +3,8 @@ html {
   --primaryTextColor: #000000;
   --secondaryBackgroundColor: rgb(221, 221, 221);
   --secondaryTextColor: rgb(124, 124, 124);
-  --primaryAccentColor: rgb(14, 151, 87);
-  --secondaryAccentColor: rgb(7, 77, 44);
+  --primaryAccentColor: rgb(0, 143, 199);
+  --secondaryAccentColor: rgb(0, 111, 155);
 }
 
 html[data-theme="dark"] {
@@ -28,4 +28,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav { 
+  height: 100px;
+  display: flex;
+  box-shadow: black 0 -32px 20px 20px;
+  align-items: center;
+  background-color: var(--primaryBackgroundColor);
+}
+
+.inactive{
+  color: var(--secondaryTextColor);
+  text-decoration: none;
+  display: flexbox;
+  align-self: center;
+  padding: 30px;
+  font-size: large;
+  transition-duration: .2s;
+  margin:20px;
+}
+
+.inactive:hover{
+  color: var(--primaryAccentColor);
+  border-bottom: 40px solid var(--primaryAccentColor)
+}
+
+.active{
+  color: var(--primaryAccentColor);
 }
